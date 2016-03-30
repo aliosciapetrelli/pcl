@@ -66,6 +66,10 @@ PCL_ADD_TEST(feature_board_estimation test_board_estimation
              FILES test_board_estimation.cpp
              LINK_WITH pcl_gtest pcl_features pcl_io
              ARGUMENTS "${PCL_SOURCE_DIR}/test/bun0.pcd")
+PCL_ADD_TEST(feature_flare_estimation test_flare_estimation
+             FILES test_flare_estimation.cpp
+             LINK_WITH pcl_gtest pcl_features pcl_io
+             ARGUMENTS "${PCL_SOURCE_DIR}/test/bun0.pcd")
 PCL_ADD_TEST(feature_shot_lrf_estimation test_shot_lrf_estimation
              FILES test_shot_lrf_estimation.cpp
              LINK_WITH pcl_gtest pcl_features pcl_io
